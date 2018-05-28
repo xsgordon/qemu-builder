@@ -10,6 +10,6 @@ RUN dnf install -y ivshmem-tools
 ENV HOME /root
 WORKDIR $HOME
 
-COPY build_nemu.sh /root/build_qemu.sh
+COPY build_qemu.sh /root/build_qemu.sh
 
 CMD [ "/root/build_qemu.sh" ]
